@@ -7,10 +7,21 @@ def binary_search(my_list, x):
     x: a number
     returns the index of x if x is in my_list, None if not.
     '''
+    low = 0 #this is a linear search 
+    high = len(my_list)-1
+    while low <= high:
+        mid = int((low+high)/2) #median 
+        if x == my_list[mid]:
+            return mid
+        elif x < my_list[mid]:
+            high = mid - 1
+        else:
+            low = mid +1
 
-test_list = [1, 3, 5, 235425423, 23, 6, 0, -23, 6434]
-test_list.sort() == sorted(test_list)
-test_list.index(test_list.sort())
+
+
+test_list = [1, 3, 5, 235425423, 23, 6, 0, -23, 6434] #this list is not sorted 
+test_list.sort()
 
 
 print(binary_search(test_list, -23))

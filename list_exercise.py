@@ -64,8 +64,7 @@ def chop(t):
     [2, 3]
     """
     t = [1,2,3,4]
-    del t[0]
-    del t[-1]
+    t.pop(0)
     print(t)
 
 

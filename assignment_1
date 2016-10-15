@@ -1,0 +1,3 @@
+def all_factors():
+x = input('please enter an integer')
+

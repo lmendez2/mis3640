@@ -22,6 +22,7 @@ print(L[0]) #calls the first element within the list
 print(L[0][0])#first element within the first element
 print(L[2][2]) #lisa
 print(L[1][2][1]) #on rail
+print(L[2][1])
 
 
 numbers = [2, 0, 1, 6, 9]
